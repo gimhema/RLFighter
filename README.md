@@ -33,7 +33,7 @@ I want to teach my agent for a long time, but my computer's perofrmance don't be
 For this reason, I thought the method.
 > 'Before play the game, the agent firstly learn the game in abstracted environment.'
 
-![구상](/RLFighter/image.PNG)
+![구상](/image.PNG)
 
 Google Drive의 확장기능으로 사용할 수 있는 Colab은 구글 클라우드 환경에서 동작하는 파이썬 개발환경입니다.
 하루 12시간 할당량 제한이 있지만 구글에서 제공하는 TPU, GPU자원을 무료로 사용할 수 있습니다.
@@ -73,10 +73,10 @@ Normal punch와 Normal Kick은 일반 공격으로 딜레이가 없습니다.
 
 Normal punch and normal kick is normal attack, this actions don't exist a delay but can't give to enemy a groggy. Also the damage is lower than smash attack.
 
-![NormalPunch1](/RLFighter/normal_punch1.gif)
-![NormalPunch2](/RLFighter/normal_punch2.gif)
-![NormalKick1](/RLFighter/normal_kick1.gif)
-![NormalKick2](/RLFighter/normal_kick2.gif)
+![NormalPunch1](/normal_punch1.gif)
+![NormalPunch2](/normal_punch2.gif)
+![NormalKick1](/normal_kick1.gif)
+![NormalKick2](/normal_kick2.gif)
 
 ======================
 
@@ -86,11 +86,11 @@ Smash punch와 Smash Kick은 스매시 공격으로 딜레이가 존재합니다
 
 Smash punch and smash kick is smash attack, this actions exist a delay. After doing smash attack, the Fighter can't do anything during a delay but damage of the smash attack is higher than normal attack and can give a groggy. If the Fighter take a groggy, the Fighter can't do any action during a groggy time.
 
-![SmashPunch1](/RLFighter/smash_punch1.gif)
-![SmashPunch2](/RLFighter/smash_punch2.gif)
-![SmashKick1](/RLFighter/smash_kick1.gif)
-![SmashKick2](/RLFighter/smash_kick2.gif)
-![SmashKick3](/RLFighter/smash_kick3.gif)
+![SmashPunch1](/smash_punch1.gif)
+![SmashPunch2](/smash_punch2.gif)
+![SmashKick1](/smash_kick1.gif)
+![SmashKick2](/smash_kick2.gif)
+![SmashKick3](/smash_kick3.gif)
 
 ======================
 
@@ -140,9 +140,9 @@ def begin_action(self, actionIdx):
 </pre>
 
 
-![TCPConnector](/RLFighter/bp/StartConnect.PNG)
-![TCPConnector](/RLFighter/bp/StartConnect2.PNG)
-![TCPConnector](/RLFighter/bp/StartConnect3.PNG)
+![TCPConnector](/bp/StartConnect.PNG)
+![TCPConnector](/bp/StartConnect2.PNG)
+![TCPConnector](/bp/StartConnect3.PNG)
 
 파이썬 가상환경에서는 Fighter 클래스의 doAction함수의 인자값을 통해서 실행됩니다. 이 doAction() 함수는 RLFighterEnvironment 클래스의 begin_action()함수에서 사용되는데, RLFighterEnvironment 클래스가 가진 Fighter 클래스 타입의 agent를 통해서 실행됩니다. 
 인게임 환경에서는 TCP Connector가 파이썬 서버로부터 전달받은 액션값을 사용하여
@@ -369,7 +369,7 @@ def _step(self, action):
 
 Python abstracted environment result
 
-![Result](/RLFighter/bp/abs_env_result.PNG)
+![Result](/bp/abs_env_result.PNG)
 
 ※ 승률을 출력하는 함수부분에서 무승부를 카운팅 하는 부분에 문제가 있어서 결과가 정상적으로 출력되지 않을수있습니다. 후에 수정하겠습니다. (학습에는 영향을 미치지 않습니다.)
 ※ Winrate calculation function has a problem in counting the draw. I will modify it. (This problem don't affect about the agent learning.)
