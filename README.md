@@ -94,6 +94,12 @@ Smash punch and smash kick is smash attack, this actions exist a delay. After do
 
 ======================
 
+### 2.1.3 Guard
+Guard 액션을 취하고 있는 동안에는 상대방의 공격에 의해 데미지를 입지 않습니다
+
+During keeping a guard action, the fighter don't receive a damage from the enemy.
+![Guard](/guard.gif)
+
 <pre>
 <code>
 def do_action(self, idx):
@@ -369,7 +375,7 @@ def _step(self, action):
 
 Python abstracted environment result
 
-![Result](/bp/abs_env_result.PNG)
+![Result](/abs_env_result.PNG)
 
 ※ 승률을 출력하는 함수부분에서 무승부를 카운팅 하는 부분에 문제가 있어서 결과가 정상적으로 출력되지 않을수있습니다. 후에 수정하겠습니다. (학습에는 영향을 미치지 않습니다.)
 ※ Winrate calculation function has a problem in counting the draw. I will modify it. (This problem don't affect about the agent learning.)
