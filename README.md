@@ -382,7 +382,10 @@ Python abstracted environment result
 ![Result](/abs_env_result_modify.PNG)
 
 ※ 승률을 출력하는 함수부분에서 무승부를 카운팅 하는 부분에 문제가 있어서 결과가 정상적으로 출력되지 않을수있습니다. 후에 수정하겠습니다. (학습에는 영향을 미치지 않습니다.)
+
+
 ※ Winrate calculation function has a problem in counting the draw. I will modify it. (This problem don't affect about the agent learning.) 
+
 
 Video Link
 [Result_Video](https://www.youtube.com/watch?v=RQ2Xax3P2iY&ab_channel=HeMaKim, "link")
