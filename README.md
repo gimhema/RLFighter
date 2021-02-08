@@ -73,10 +73,10 @@ Normal punch와 Normal Kick은 일반 공격으로 딜레이가 없습니다.
 
 Normal punch and normal kick is normal attack, this actions don't exist a delay but can't give to enemy a groggy. Also the damage is lower than smash attack.
 
-![NormalPunch1](/RLFighter/노말펀치1.gif)
-![NormalPunch2](/RLFighter/노말펀치2.gif)
-![NormalKick1](/RLFighter/노말킥1.gif)
-![NormalKick2](/RLFighter/노말킥2.gif)
+![NormalPunch1](/RLFighter/normal_punch1.gif)
+![NormalPunch2](/RLFighter/normal_punch2.gif)
+![NormalKick1](/RLFighter/normal_kick1.gif)
+![NormalKick2](/RLFighter/normal_kick2.gif)
 
 ======================
 
@@ -86,11 +86,11 @@ Smash punch와 Smash Kick은 스매시 공격으로 딜레이가 존재합니다
 
 Smash punch and smash kick is smash attack, this actions exist a delay. After doing smash attack, the Fighter can't do anything during a delay but damage of the smash attack is higher than normal attack and can give a groggy. If the Fighter take a groggy, the Fighter can't do any action during a groggy time.
 
-![SmashPunch1](/RLFighter/스매시펀치1.gif)
-![SmashPunch2](/RLFighter/스매시펀치2.gif)
-![SmashKick1](/RLFighter/스매시킥1.gif)
-![SmashKick2](/RLFighter/스매시킥2.gif)
-![SmashKick3](/RLFighter/스매시킥2.gif)
+![SmashPunch1](/RLFighter/smash_punch1.gif)
+![SmashPunch2](/RLFighter/smash_punch2.gif)
+![SmashKick1](/RLFighter/smash_kick1.gif)
+![SmashKick2](/RLFighter/smash_kick2.gif)
+![SmashKick3](/RLFighter/smash_kick3.gif)
 
 ======================
 
@@ -369,7 +369,7 @@ def _step(self, action):
 
 Python abstracted environment result
 
-![Result](/RLFighter/bp/가상환경결과.PNG)
+![Result](/RLFighter/bp/abs_env_result.PNG)
 
 ※ 승률을 출력하는 함수부분에서 무승부를 카운팅 하는 부분에 문제가 있어서 결과가 정상적으로 출력되지 않을수있습니다. 후에 수정하겠습니다. (학습에는 영향을 미치지 않습니다.)
 ※ Winrate calculation function has a problem in counting the draw. I will modify it. (This problem don't affect about the agent learning.)
