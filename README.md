@@ -98,7 +98,11 @@ Smash punch and smash kick is smash attack, this actions exist a delay. After do
 Guard 액션을 취하고 있는 동안에는 상대방의 공격에 의해 데미지를 입지 않습니다
 
 During keeping a guard action, the fighter don't receive a damage from the enemy.
+
+
 ![Guard](/guard.gif)
+
+======================
 
 <pre>
 <code>
