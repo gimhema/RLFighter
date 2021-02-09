@@ -61,7 +61,7 @@ The project name is RL_Fighter. In this project, two mannequin that face each ot
 
 ## 2.1 Action
 
-Fighter가 수행할수있는 액션을 다음과 같습니다.
+Fighter가 수행할수있는 액션은 다음과 같습니다.
 
 In this part, I will describe about the Fighter's actions.
 
