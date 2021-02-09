@@ -25,9 +25,10 @@ The problem is that the game must execude during long time for learning.
 Usually, for showing signifiacnt result in Reinforcement learning, 
 the agent should learn in at least 10000 episodes.
 Unfortunatlely, I met limit in this project when about 5000 episodes beacause for learning about 5000 episodes, I spent a 5~6 hours.
-I want to teach my agent for a long time, but my computer's perofrmance don't be follow my expectation.
+I want to teach my agent for a long time, but my computer's perofrmance doesn't be follow my expectation.
 
 따라서 저는 다음과 같은 방법을 생각해보았습니다.
+
 > '가벼운 임의의 가상환경에서 학습을 시킨 뒤, 언리얼 엔진4로 학습 결과를 시각화해보면 어떨까?'
 
 For this reason, I thought the method.
@@ -71,7 +72,7 @@ Normal punch와 Normal Kick은 일반 공격으로 딜레이가 없습니다.
 하지만 적에게 그로기를 줄 수 없고 데미지가 낮습니다.
 인게임에서는 다음과 같이 나타납니다
 
-Normal punch and normal kick is normal attack, this actions don't exist a delay but can't give to enemy a groggy. Also the damage is lower than smash attack.
+Normal punch and normal kick is normal attack, this actions doesn't exist a delay but can't give to enemy a groggy. Also the damage is lower than smash attack.
 
 ![NormalPunch1](/normal_punch1.gif)
 ![NormalPunch2](/normal_punch2.gif)
@@ -97,7 +98,7 @@ Smash punch and smash kick is smash attack, this actions exist a delay. After do
 ### 2.1.3 Guard
 Guard 액션을 취하고 있는 동안에는 상대방의 공격에 의해 데미지를 입지 않습니다
 
-During keeping a guard action, the fighter don't receive a damage from the enemy.
+During keeping a guard action, the fighter doesn't receive a damage from the enemy.
 
 
 ![Guard](/guard.gif)
@@ -384,7 +385,7 @@ Python abstracted environment result
 ※ 승률을 출력하는 함수부분에서 무승부를 카운팅 하는 부분에 문제가 있어서 결과가 정상적으로 출력되지 않을수있습니다. 후에 수정하겠습니다. (학습에는 영향을 미치지 않습니다.)
 
 
-※ Winrate calculation function has a problem in counting the draw. I will modify it. (This problem don't affect about the agent learning.) 
+※ Winrate calculation function has a problem in counting the draw. I will modify it. (This problem doesn't affect about the agent learning.) 
 
 
 Video Link
